@@ -19,10 +19,6 @@ import (
 var mut sync.Mutex
 
 func main() {
-	//answer := make(map[string]int)
-	//fmt.Println(answer)
-	//Map_Append(answer)
-	//Map_Print(answer)
 
 	reader, writer := io.Pipe()
 

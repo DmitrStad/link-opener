@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"exersice/sum"
 	"fmt"
 	"io"
 	"os"
@@ -30,6 +31,8 @@ func main() {
 
 	// 3. Читаем из reader и строим map
 	counts := countLinesFromReader(reader)
+	total := sum.Sum(counts)
+	fmt.Sprintf("Общее количество ссылок: %d\n", total)
 
 	// 4. Выводим результат
 	fmt.Println("Частота строк:")
